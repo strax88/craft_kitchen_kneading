@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "Recipses"
+version = "0.1.0"
+description = ""
+authors = ["Kirill <strax.kstr@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlalchemy = "^2.0.38"
+uvicorn = "^0.34.0"
+fastapi = "^0.115.8"
+pydantic = {extras = ["email"], version = "^2.10.6"}
+aiosqlite = "^0.21.0"
+pydantic-settings = "^2.8.0"
+alembic = "^1.14.1"
+bcrypt = "^4.2.1"
+python-jose = {extras = ["cryptography"], version = "^3.4.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+httpx = "^0.28.1"
+python-multipart = "^0.0.20"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
